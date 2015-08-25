@@ -142,12 +142,17 @@ function startNeverEndingGame (images) {
 
 	infoBox = new InfoBox({
 		initialLines : [
-			'SkiFree.js',
+			'YetiFree.js',
 			infoBoxControls,
 			'Travelled 0m',
 			'High Score: ' + highScore,
 			'Skiers left: ' + livesLeft,
-			'Created by Dan Hough (@basicallydan)'
+			'',
+			'',
+			'skifree by pirih', 
+			'skifree.js by hough',
+			'YetiFree.js by *this guy*',
+			'(m vogel)'
 		],
 		position: {
 			top: 15,
@@ -183,13 +188,19 @@ function startNeverEndingGame (images) {
 			}
 
 			infoBox.setLines([
-				'SkiFree.js',
+				'YetiFree.js',
 				infoBoxControls,
 				'Travelled ' + distanceTravelledInMetres + 'm',
 				'Skiers left: ' + livesLeft,
 				'High Score: ' + highScore,
-				'Created by Dan Hough (@basicallydan)',
-				'Current Speed: ' + player.getSpeed()/*,
+				'Current Speed: ' + player.getSpeed(),
+				'',
+				'',
+				'skifree by pirih',
+				'skifree.js by hough',
+				'YetiFree.js by *this guy*',
+				'(m vogel)'
+				/*,
 				'Skier Map Position: ' + player.mapPosition[0].toFixed(1) + ', ' + player.mapPosition[1].toFixed(1),
 				'Mouse Map Position: ' + mouseMapPosition[0].toFixed(1) + ', ' + mouseMapPosition[1].toFixed(1)*/
 			]);
